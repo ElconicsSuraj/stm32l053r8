@@ -1,21 +1,153 @@
-17:32:53 **** Incremental Build of configuration Debug for project stm32l053r8_ds18b20 ****
+20:28:31 **** Incremental Build of configuration Debug for project stm32wle5ccu6 ****
 make -j20 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "stm32l053r8_ds18b20.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Admin\Desktop\Test project\stm32_nucleo_lo53r8\stm32l053r8_ds18b20\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32l053r8_ds18b20.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: stm32l053r8_ds18b20.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32WLE5xx -c -I../Core/Inc -I../Drivers/STM32WLxx_HAL_Driver/Inc -I../Drivers/STM32WLxx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32WLxx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:199:7: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  199 |       sprintf(msg, "Temperature: %.2f °C\r\n", temp);
+      |       ^~~~~~~
+../Core/Src/main.c:9:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+    8 | #include "string.h"
+  +++ |+#include <stdio.h>
+    9 | /* USER CODE END Includes */
+../Core/Src/main.c:199:7: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  199 |       sprintf(msg, "Temperature: %.2f °C\r\n", temp);
+      |       ^~~~~~~
+../Core/Src/main.c:199:7: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+arm-none-eabi-gcc -o "stm32wle5ccu6.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Admin\Desktop\Test project\stm32_nucleo_lo53r8\stm32wle5ccu6\STM32WLE5CCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32wle5ccu6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32wle5ccu6.elf
  
-arm-none-eabi-size  stm32l053r8_ds18b20.elf 
-arm-none-eabi-objdump -h -S stm32l053r8_ds18b20.elf  > "stm32l053r8_ds18b20.list"
+arm-none-eabi-size  stm32wle5ccu6.elf 
+arm-none-eabi-objdump -h -S stm32wle5ccu6.elf  > "stm32wle5ccu6.list"
    text	   data	    bss	    dec	    hex	filename
-  42704	    468	   2108	  45280	   b0e0	stm32l053r8_ds18b20.elf
+  38412	    468	   2132	  41012	   a034	stm32wle5ccu6.elf
 Finished building: default.size.stdout
  
-Finished building: stm32l053r8_ds18b20.list
+Finished building: stm32wle5ccu6.list
  
-17:32:56 **** Incremental Build of configuration Debug for project stm32l053r8_ds18b20 ****
+20:28:34 **** Incremental Build of configuration Debug for project stm32wle5ccu6 ****
 make -j20 all 
-arm-none-eabi-size  stm32l053r8_ds18b20.elf 
+arm-none-eabi-size  stm32wle5ccu6.elf 
    text	   data	    bss	    dec	    hex	filename
-  42704	    468	   2108	  45280	   b0e0	stm32l053r8_ds18b20.elf
+  38412	    468	   2132	  41012	   a034	stm32wle5ccu6.elf
+Finished building: default.size.stdout
+ 
+20:28:55 **** Incremental Build of configuration Debug for project stm32wle5ccu6 ****
+make -j20 all 
+arm-none-eabi-size  stm32wle5ccu6.elf 
+   text	   data	    bss	    dec	    hex	filename
+  38412	    468	   2132	  41012	   a034	stm32wle5ccu6.elf
+Finished building: default.size.stdout
+ 
+20:29:29 **** Incremental Build of configuration Debug for project stm32wle5ccu6 ****
+make -j20 all 
+arm-none-eabi-size  stm32wle5ccu6.elf 
+   text	   data	    bss	    dec	    hex	filename
+  38412	    468	   2132	  41012	   a034	stm32wle5ccu6.elf
+Finished building: default.size.stdout
+ 
+20:35:00 **** Incremental Build of configuration Debug for project stm32wle5ccu6 ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32WLE5xx -c -I../Core/Inc -I../Drivers/STM32WLxx_HAL_Driver/Inc -I../Drivers/STM32WLxx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32WLxx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:195:3: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  195 |   sprintf(msg, "Temperature: °C\r\n");
+      |   ^~~~~~~
+../Core/Src/main.c:9:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+    8 | #include "string.h"
+  +++ |+#include <stdio.h>
+    9 | /* USER CODE END Includes */
+../Core/Src/main.c:195:3: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  195 |   sprintf(msg, "Temperature: °C\r\n");
+      |   ^~~~~~~
+../Core/Src/main.c:195:3: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+arm-none-eabi-gcc -o "stm32wle5ccu6.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Admin\Desktop\Test project\stm32_nucleo_lo53r8\stm32wle5ccu6\STM32WLE5CCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32wle5ccu6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32wle5ccu6.elf
+ 
+arm-none-eabi-size  stm32wle5ccu6.elf 
+arm-none-eabi-objdump -h -S stm32wle5ccu6.elf  > "stm32wle5ccu6.list"
+   text	   data	    bss	    dec	    hex	filename
+  38444	    468	   2132	  41044	   a054	stm32wle5ccu6.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32wle5ccu6.list
+ 
+20:35:05 **** Incremental Build of configuration Debug for project stm32wle5ccu6 ****
+make -j20 all 
+arm-none-eabi-size  stm32wle5ccu6.elf 
+   text	   data	    bss	    dec	    hex	filename
+  38444	    468	   2132	  41044	   a054	stm32wle5ccu6.elf
+Finished building: default.size.stdout
+ 
+20:35:22 **** Incremental Build of configuration Debug for project stm32wle5ccu6 ****
+make -j20 all 
+arm-none-eabi-size  stm32wle5ccu6.elf 
+   text	   data	    bss	    dec	    hex	filename
+  38444	    468	   2132	  41044	   a054	stm32wle5ccu6.elf
+Finished building: default.size.stdout
+ 
+20:41:10 **** Incremental Build of configuration Debug for project stm32wle5ccu6 ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32WLE5xx -c -I../Core/Inc -I../Drivers/STM32WLxx_HAL_Driver/Inc -I../Drivers/STM32WLxx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32WLxx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:202:3: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  202 |   sprintf(msg, "Temperature: °C\r\n");
+      |   ^~~~~~~
+../Core/Src/main.c:9:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+    8 | #include "string.h"
+  +++ |+#include <stdio.h>
+    9 | /* USER CODE END Includes */
+../Core/Src/main.c:202:3: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  202 |   sprintf(msg, "Temperature: °C\r\n");
+      |   ^~~~~~~
+../Core/Src/main.c:202:3: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+arm-none-eabi-gcc -o "stm32wle5ccu6.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Admin\Desktop\Test project\stm32_nucleo_lo53r8\stm32wle5ccu6\STM32WLE5CCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32wle5ccu6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32wle5ccu6.elf
+ 
+arm-none-eabi-size  stm32wle5ccu6.elf 
+arm-none-eabi-objdump -h -S stm32wle5ccu6.elf  > "stm32wle5ccu6.list"
+   text	   data	    bss	    dec	    hex	filename
+  38436	    468	   2132	  41036	   a04c	stm32wle5ccu6.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32wle5ccu6.list
+ 
+20:41:14 **** Incremental Build of configuration Debug for project stm32wle5ccu6 ****
+make -j20 all 
+arm-none-eabi-size  stm32wle5ccu6.elf 
+   text	   data	    bss	    dec	    hex	filename
+  38436	    468	   2132	  41036	   a04c	stm32wle5ccu6.elf
+Finished building: default.size.stdout
+ 
+20:44:20 **** Incremental Build of configuration Debug for project stm32wle5ccu6 ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DCORE_CM4 -DUSE_HAL_DRIVER -DSTM32WLE5xx -c -I../Core/Inc -I../Drivers/STM32WLxx_HAL_Driver/Inc -I../Drivers/STM32WLxx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32WLxx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:209:3: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  209 |   sprintf(msg, "Temperature: °C\r\n");
+      |   ^~~~~~~
+../Core/Src/main.c:9:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+    8 | #include "string.h"
+  +++ |+#include <stdio.h>
+    9 | /* USER CODE END Includes */
+../Core/Src/main.c:209:3: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+  209 |   sprintf(msg, "Temperature: °C\r\n");
+      |   ^~~~~~~
+../Core/Src/main.c:209:3: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+arm-none-eabi-gcc -o "stm32wle5ccu6.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Admin\Desktop\Test project\stm32_nucleo_lo53r8\stm32wle5ccu6\STM32WLE5CCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32wle5ccu6.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32wle5ccu6.elf
+ 
+arm-none-eabi-size  stm32wle5ccu6.elf 
+arm-none-eabi-objdump -h -S stm32wle5ccu6.elf  > "stm32wle5ccu6.list"
+   text	   data	    bss	    dec	    hex	filename
+  38724	    468	   2132	  41324	   a16c	stm32wle5ccu6.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32wle5ccu6.list
+ 
+20:44:23 **** Incremental Build of configuration Debug for project stm32wle5ccu6 ****
+make -j20 all 
+arm-none-eabi-size  stm32wle5ccu6.elf 
+   text	   data	    bss	    dec	    hex	filename
+  38724	    468	   2132	  41324	   a16c	stm32wle5ccu6.elf
 Finished building: default.size.stdout
  

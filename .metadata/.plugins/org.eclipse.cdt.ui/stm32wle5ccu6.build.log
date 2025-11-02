@@ -1,0 +1,10 @@
+20:44:23 **** Incremental Build of configuration Debug for project stm32wle5ccu6 ****
+make -j20 all 
+arm-none-eabi-size  stm32wle5ccu6.elf 
+   text	   data	    bss	    dec	    hex	filename
+  38724	    468	   2132	  41324	   a16c	stm32wle5ccu6.elf
+Finished building: default.size.stdout
+ 
+
+20:44:23 Build Finished. 0 errors, 0 warnings. (took 193ms)
+
