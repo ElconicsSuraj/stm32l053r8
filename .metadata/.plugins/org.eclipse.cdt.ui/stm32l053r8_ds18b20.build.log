@@ -1,0 +1,10 @@
+17:32:56 **** Incremental Build of configuration Debug for project stm32l053r8_ds18b20 ****
+make -j20 all 
+arm-none-eabi-size  stm32l053r8_ds18b20.elf 
+   text	   data	    bss	    dec	    hex	filename
+  42704	    468	   2108	  45280	   b0e0	stm32l053r8_ds18b20.elf
+Finished building: default.size.stdout
+ 
+
+17:32:56 Build Finished. 0 errors, 0 warnings. (took 187ms)
+

@@ -1,0 +1,12 @@
+../Core/Src/main.c:31:5:__io_putchar	1
+../Core/Src/main.c:41:6:delay_us	2
+../Core/Src/main.c:53:9:DS18B20_Start	2
+../Core/Src/main.c:81:6:DS18B20_Write	3
+../Core/Src/main.c:102:9:DS18B20_Read	3
+../Core/Src/main.c:125:7:DS18B20_GetTemp	1
+../Core/Src/main.c:191:5:main	1
+../Core/Src/main.c:284:6:SystemClock_Config	4
+../Core/Src/main.c:371:13:MX_TIM2_Init	4
+../Core/Src/main.c:410:13:MX_USART2_UART_Init	2
+../Core/Src/main.c:445:13:MX_GPIO_Init	1
+../Core/Src/main.c:484:6:Error_Handler	1

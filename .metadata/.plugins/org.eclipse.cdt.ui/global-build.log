@@ -1,0 +1,21 @@
+17:32:53 **** Incremental Build of configuration Debug for project stm32l053r8_ds18b20 ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "stm32l053r8_ds18b20.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\Admin\Desktop\Test project\stm32_nucleo_lo53r8\stm32l053r8_ds18b20\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32l053r8_ds18b20.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32l053r8_ds18b20.elf
+ 
+arm-none-eabi-size  stm32l053r8_ds18b20.elf 
+arm-none-eabi-objdump -h -S stm32l053r8_ds18b20.elf  > "stm32l053r8_ds18b20.list"
+   text	   data	    bss	    dec	    hex	filename
+  42704	    468	   2108	  45280	   b0e0	stm32l053r8_ds18b20.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32l053r8_ds18b20.list
+ 
+17:32:56 **** Incremental Build of configuration Debug for project stm32l053r8_ds18b20 ****
+make -j20 all 
+arm-none-eabi-size  stm32l053r8_ds18b20.elf 
+   text	   data	    bss	    dec	    hex	filename
+  42704	    468	   2108	  45280	   b0e0	stm32l053r8_ds18b20.elf
+Finished building: default.size.stdout
+ 
